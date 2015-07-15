@@ -1,6 +1,6 @@
 Summary: Libvirt configuration for NethServer
 Name: nethserver-libvirt
-Version: 1.0.0
+Version: 1.0.1
 Release: 1%{?dist}
 License: GPL
 URL: %{url_prefix}/%{name}
@@ -36,6 +36,9 @@ echo "%doc COPYING" >> %{name}-%{version}-filelist
 %defattr(-,root,root)
 
 %changelog
+* Wed Jul 15 2015 Giacomo Sanchietti <giacomo.sanchietti@nethesis.it> - 1.0.1-1
+- Dnsmasq: drop bind-interfaces implementation - Enhancement #3220 [NethServer]
+
 * Wed Jan 28 2015 Giacomo Sanchietti <giacomo.sanchietti@nethesis.it> - 1.0.0-1.ns6
 - First release: KVM - virtual machines - Feature #1761 [NethServer]
 
